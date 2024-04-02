@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <img src="./img/bg.jpg" alt="" id="bg">
+        <h2 id="text">Mountains</h3>
+            <img src="./img/man.png" alt="" id="man">
+            <img src="./img/clouds_1.png" alt="" id="cloud1">
+            <img src="./img/clouds_2.png" alt="" id="cloud2">
+            <img src="./img/mountain_left (1).png" alt="" id="ml">
+            <img src="./img/mountain_right (1).png" alt="" id="mr">
+    </section>
+    <div class="sec">
+        <h1 id="h1">Mountains is Awesome</h1>
+        <p id="para">Snow-covered mountains present a breathtaking spectacle, transforming landscapes into serene, otherworldly vistas. These majestic peaks, draped in a pristine blanket of white, evoke a sense of tranquility and awe. The snow not only beautifies the terrain but also plays a crucial role in shaping the environment and sustaining life.
+
+            The snow-capped summits create a stark contrast against the azure sky, forming an iconic image of natural grandeur. The crystalline snow reflects sunlight, producing a dazzling display that captivates onlookers. In addition to their aesthetic appeal, snow-covered mountains serve as vital water reservoirs, storing frozen precipitation that gradually melts during warmer months, supplying rivers and streams with a continuous flow.
+            
+            These frigid heights are often home to a diverse range of flora and fauna, adapted to the harsh conditions. Alpine plants, hardy and resilient, push through the snow to bloom briefly during the short growing season. Animals like snow leopards, mountain goats, and pika have evolved to navigate the challenging terrain, showcasing the adaptability of life in extreme environments.
+            
+            The snow that blankets these peaks serves as a natural insulator, preserving ecosystems and influencing climate patterns. Moreover, snow-covered mountains contribute significantly to global weather systems, influencing precipitation patterns and playing a crucial role in regulating the Earth's temperature.
+            
+            Adventure-seekers and nature enthusiasts are drawn to these icy realms, engaging in activities like skiing, snowboarding, and mountaineering. The challenge of conquering snow-clad summits adds an element of thrill to these pursuits, attracting enthusiasts from around the world.
+            
+            While snow mountains offer a captivating spectacle and recreational opportunities, they also symbolize the fragility of our planet's ecosystems. The impact of climate change is evident in the diminishing snow cover and receding glaciers, emphasizing the urgent need for sustainable environmental practices to preserve these majestic landscapes for future generations.</p>
+        <br><br>
+        <p id="para1">Snow-capped mountains present a breathtaking and awe-inspiring spectacle that captivates the imagination of those fortunate enough to witness their majesty. These colossal peaks, often reaching dizzying heights, are draped in a pristine blanket of snow, transforming the landscape into a mesmerizing winter wonderland. The sight of these snow mountains evokes a sense of tranquility and grandeur, drawing enthusiasts, adventurers, and nature lovers alike.
+
+            The towering summits, adorned with glistening snow, create a striking contrast against the azure sky. The play of light on the snow-covered slopes produces a dazzling display, with sunlight bouncing off the icy crystals to create a radiant spectacle. The crisp mountain air is invigorating, carrying the pure scent of snow and pine. As the wind whispers through the rugged peaks, it adds an ethereal soundtrack to the scene, enhancing the overall sensory experience.
+            
+            These snow mountains are not merely static monuments; they are dynamic and ever-changing. The snow, constantly shifting and settling, forms intricate patterns and textures that contribute to the mountains' unique character. The glaciers that cling to the slopes add an element of timelessness, embodying the slow and steady march of geological processes.
+            
+            Wildlife thrives in the challenging conditions of snow mountains, with creatures adapted to the harsh environment. Iconic species such as snow leopards, mountain goats, and pika navigate the rugged terrain, showcasing the resilience of life at high altitudes. The ecosystems sustained by these mountains are delicate and interconnected, emphasizing the importance of preserving these habitats for the sake of biodiversity and the planet's ecological balance.
+            
+            Beyond their aesthetic allure, snow mountains play a crucial role in regulating the Earth's climate. They act as natural water towers, storing vast amounts of freshwater in the form of snow and ice. As the snow melts during warmer seasons, it feeds rivers and sustains downstream ecosystems, providing a lifeline for countless communities.
+            
+            In conclusion, snow mountains epitomize the sublime beauty of nature, offering a spectacle that transcends the ordinary. Their significance extends beyond their visual appeal, influencing weather patterns, supporting diverse ecosystems, and providing a source of inspiration for all who gaze upon their majestic peaks.</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+
+
+        gsap.to("#bg",{
+            scrollTrigger: {
+            scrub : 1
+            },
+            scale : 1.5
+        })
+
+        gsap.to("#man",{
+            scrollTrigger: {
+            scrub : 1
+            },
+            scale : 0.5
+        })
+
+        gsap.to("#ml",{
+            scrollTrigger: {
+            scrub : 1
+            },
+            x:-500
+        })
+
+        gsap.to("#mr",{
+            scrollTrigger: {
+            scrub : 1
+            },
+            x:500
+        })
+        
+        gsap.to("#cloud1",{
+            scrollTrigger: {
+            scrub : 1
+            },
+            x:-200
+        })
+
+        gsap.to("#cloud2",{
+            scrollTrigger: {
+            scrub : 1
+            },
+            x:200
+        })
+
+        gsap.to("#text",{
+            scrollTrigger: {
+            scrub : 1
+            },
+            y:500
+        })
+
+        // gsap.to("#para",{
+        //     scrollTrigger: {
+        //     scrub : 1
+        //     },
+        //     x:-500
+        // })
+
+        // gsap.to("#para1",{
+        //     scrollTrigger: {
+        //     scrub : 1
+        //     },
+        //     x:500
+        // })
+    </script>
+</body>
+
+</html>
